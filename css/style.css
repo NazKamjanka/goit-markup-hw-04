@@ -118,6 +118,15 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-two-color);
 }
+.contact-svg {
+  margin-right: 10px;
+  margin-bottom: -2px;
+  fill: rgba(117, 117, 117, 1);
+}
+.contact-svg:hover,
+.contact-svg:focus {
+  fill: var(--primery-text-color);
+}
 .tel-link {
   font-weight: 500;
   font-size: 14px;
@@ -199,6 +208,7 @@ body {
 }
 .description-list {
   display: flex;
+  justify-content: space-between;
 }
 .description-item:not(:last-child) {
   margin-right: 30px;
@@ -249,6 +259,7 @@ body {
 }
 .team-photos {
   width: 270px;
+  background-color: var(--adres-color);
 }
 .team-photos:not(:last-child) {
   margin-right: 30px;
@@ -382,6 +393,7 @@ body {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  fill: rgba(175, 177, 184, 1);
 }
 .social-list {
   display: flex;
@@ -398,12 +410,31 @@ body {
 }
 .social-list-link:hover,
 .social-list-link:focus {
+  fill: rgba(255, 255, 255, 1);
   background-color: rgba(33, 150, 243, 1);
 }
-
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  fill: Solid rgba(255, 255, 255, 1);
+  fill: var(--adres-color);
+}
+.social-list-links:hover,
+.social-list-links:focus {
+  background-color: rgba(33, 150, 243, 1);
+}
+.social-list-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--primery-text-color);
+  border-radius: 50%;
+}
+
+.social-list-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--adres-color);
 }
 .clients {
   padding-left: 215px;
@@ -421,13 +452,28 @@ body {
 .clients-list-icon {
   width: 106px;
   height: 60px;
-  margin-right: 30px;
+  fill: rgba(175, 177, 184, 1);
+}
+.clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  width: 170px;
+  height: 92px;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  background-color: var(--primery-text-color);
+}
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
+  fill: var(--adres-color);
 }
 .clients-list {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 94px;
-  margin-right: 215px;
-  margin-left: 215px;
 }
 .conect {
   margin-right: 1100px;
@@ -435,4 +481,13 @@ body {
 }
 .conect-social {
   color: var(--adres-color);
+  margin-bottom: 20px;
+}
+.des {
+  width: 270px;
+  height: 120px;
+}
+.des-icon {
+  margin-left: 100px;
+  margin-bottom: 30px;
 }
